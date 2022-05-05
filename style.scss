@@ -1,0 +1,21 @@
+.main-block {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(22, 20px);
+    grid-template-rows: repeat(6, 20px);
+    background-color: #424345;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    gap: 10px;
+    width: fit-content;
+  }
+
+}
