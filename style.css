@@ -43,6 +43,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  border-radius: 20px;
 }
 .main-block__container > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -551,6 +552,7 @@
 
 .symbol {
   font-family: "Inconsolata", monospace;
+  text-align: center;
 }
 
 .symbol-ani {
