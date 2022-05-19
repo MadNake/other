@@ -5,11 +5,16 @@ setTimeout(function() {
 str = prompt("Что показать?","")}, 2000);
 
 
-
 let conf = function() {confirm("Начинаем?") ? setTimeout(start, [1000]) : undefined;}
 console.log(letter);
 
 let start = function() {
+
+  if (!((str.length / 2) % 2 === 0)) {
+      str += ".";
+      console.log(str);
+  };
+
   for (var i = 0; i < letter.length; i++) {
     letter[i].classList.add("symbol-ani");
   };
