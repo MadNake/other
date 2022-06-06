@@ -10,22 +10,22 @@ console.log(letter);
 
 let start = function() {
 
-  if (!((str.length / 2) % 2 === 0)) {
-      str += ".";
-      console.log(str);
-  };
+  // if (!((str.length / 2) % 2 === 0)) {
+  //     str += ".";
+  //     console.log(str);
+  // };
 
   for (var i = 0; i < letter.length; i++) {
     letter[i].classList.add("symbol-ani");
   };
-  for (var i = (letter.length / 2) - (str.length / 2), j = 0; i < (letter.length / 2) + (str.length / 2); i++, j++ ) {
+  for (var i = (letter.length / 2) - Math.ceil(str.length / 2), j = 0; i < (letter.length / 2) + Math.ceil(str.length / 2); i++, j++ ) {
       letter[i].textContent = str[j];
       letter[i].classList.add("color");
   }
-  for (var i = 0; i < (letter.length / 2) - (str.length / 2); i++) {
+  for (var i = 0; i < (letter.length / 2) - Math.ceil(str.length / 2); i++) {
     letter[i].textContent = "$"
   }
-  for (var i = (letter.length / 2) + (str.length / 2); i < letter.length; i++) {
+  for (var i = (letter.length / 2) + Math.ceil(str.length / 2); i < letter.length; i++) {
     letter[i].textContent = "%"
   }
 
